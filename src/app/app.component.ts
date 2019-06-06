@@ -1,6 +1,6 @@
 import { Component, OnDestroy } from '@angular/core';
 import {Observable, interval, Subscription, timer, fromEvent} from 'rxjs';
-import {map, take, repeat, takeUntil, bufferWhen, debounceTime,filter} from 'rxjs/operators';
+import {map, take, repeat, takeUntil, bufferWhen, debounceTime} from 'rxjs/operators';
 
 
 @Component({
