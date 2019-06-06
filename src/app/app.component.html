@@ -1,0 +1,19 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="mainWrapper">
+  <div class="timerContainer">
+    <div><h6>By default it counts 10 minutes</h6></div>
+    <div class="timerCounter">
+      <h1 class="digits">{{(Hours)||timerStartValue}}</h1>
+      <span class="delimiter">:</span>
+      <h1 class="digits">{{(Minutes)||timerStartValue}}</h1>
+      <span class="delimiter">:</span>
+      <h1 class="digits">{{(Seconds | async )|| secondsValue}}</h1>
+    </div>
+    <div class="timerControls">
+      <button class="buttonControl" (click)="funcTimerOnOff()">Start / Stop</button>
+      <button class="buttonControl" (click)="funcWait(this)">Wait</button>
+      <button class="buttonControl" (click)="funcReset()">Reset</button>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,21 @@
+.mainWrapper{
+    text-align: center;
+    width:50%;
+}
+.timerContainer{
+    border:1px solid #000111;
+    border-radius:10px;
+}
+.digits{
+    display: inline;
+}
+.delimiter{
+    display: inline-block;
+    margin: auto 10px;
+}
+.timerControls{
+    margin: 10px auto;
+}
+.buttonControl{
+    margin: auto 10px;
+}
