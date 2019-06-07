@@ -66,10 +66,12 @@ export class AppComponent implements OnDestroy{
           }catch(err){console.warn('start timer before clicking :)');}
           return 'stopped at '+list.map(cur => new Date(cur.timeStamp).getSeconds().toString() +'s'+ new Date(cur.timeStamp).getMilliseconds().toString()+'ms');
         }else{
-          try{
-            this.funcStart();
-          }catch(err){console.warn('start timer before clicking :)');}
-          return 'clicks not in range';
+          // try{
+          // this.funcStart();
+          // }catch(err){
+          // console.warn('start timer before clicking :)');
+          // }
+          return 'clicks not in range of 300 ms ';
         }
       })
     )
